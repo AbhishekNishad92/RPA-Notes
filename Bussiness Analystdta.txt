@@ -1,0 +1,25 @@
+Businees department & Technical solution delivery team
+
+BA gather the process requirements from the business unit members and then corroborete that information to create the documents which needs to encompass thr full scope of the project.
+
+Bussiness Analysts are incharge of transferring knowledge from the technical solution level,namely to the developers.
+
+So proper understanding of every single business requirement is mandatory.
+The purpose is to ensure that  technical solution satisfactory suits the need ofthebussnesdepartment.
+Once the technical team finishes the design and the development of the solution.
+The BA analyzes & confirms whether it matches all the specified bussiness criteria.
+The BA also conducts the opportunity assessment of the chosen processes.
+Various elements have to be taken into account during step-the process complexity the input type etc.
+In solutin design phase ,a BA creates the PDD(Process Design Document) and hands it over to the technical users.
+The PDD is the one of the most critical business analysis deliverables,because it ensure the transfer of  the knowledge from the user group to the developers.
+If BAs are also incharge with quality assurance ,as it often happens,They also have to create the test cases & scenarios.
+The Automate phase in the one in which BA monitors
+and keeps trackoff the changes that occur spearheads
+the change Management process by evaluating the impact of the changes proposed.
+
+
+In testing phase ,the BA coordinates all the testing efforts and also ensures that all the required signoffs are obtained.
+
+
+
+

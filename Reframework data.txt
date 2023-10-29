@@ -1,0 +1,143 @@
+ ReframeWork Introduction:-
+Robotic Enterprise framework
+
+
+Templet
+Reuse Existing
+Modular
+State machine 
+Best Practice
+
+
+Exception handling
+Logs
+Queue
+Excel Automation
+State machine
+Dictionary
+Reuse Workflow-One workflow with another workflow
+http://bptravel.blueprism.com/
+
+
+config 
+Setting-(Name value description)
+Constants
+Assets-Name asset Description
+
+Rule Exception-bussiness exception -again it will go for new transaction 
+Asking for new transaction
+
+
+Reframework is entirely based on State Machine
+Entire flow is state machine.
+  We have 3 States & 1 Final States(End State)
+These are sub prcess,Sub Modules & ,Mini Pocesses
+
+Yu can split your process in smaller project   
+Line are  called Transition 
+
+Each State has some input transition & output transition 
+It has multiple input transition & multiple output transition.
+
+But each transition has some condition (System Error is nothing) unique condition
+Either System Exception or sucess 
+ 
+If Any system Exception it will go to particular End Process
+N number of states & only one start and End process
+Each transition  have 2 output 
+If your process is working fine then you can go for next state 
+Each state have n number of transitions 
+
+
+A Reframework is just developed by Uipath to encounter some complex use cases
+Complex UseCases means large volume of data where u want to use concept of queue &  make use of exception of user login 
+ Where u want to spare your robots very easily 
+in now scenarion if you are working with one robot & one system but further you have to work with multiple robot & multiple system
+say toay your robot is workig with one machine & after some one month or 2 month  you have to work with multiple machine
+Then using Reframework we will give flexblity of doing that very easily by making concept of queue & logs.Its give you exception handling & report generation for all
+indivisual volumns or items in your transaction 
+
+When you go inside project structure there is something called Data folder in data folder something called Config file 
+If you open this file you will able to  see predefined constants which is use in your project.
+
+In Config File there is three different thing setting,Constants & Assets
+
+
+
+
+They need to  have proper Exceptin handling & recovery ablities,as well effective loging & reporting functionality.
+Morever high maintainiblity & extensiblity reusablity,and ease of develpment, are 
+only some of quality robot should have 
+In this tuturial we will look at a template called the Robotic Enterprise Framework 
+Which is designed to be every automation project 
+
+we will go over the mechanism,ideas, and workflow behind it.
+By end of this tutorial,yu should understand how the templete is bulit,how it works & how to adjust it to automate own prcess.
+We start creating the new automation project using the "Uipath Robotic Enterprise Framework".
+The framework yu can download from git hub.
+The files will be integrated in studio as well a templete in future version.
+we run from main when project deployed and started from the Orchestrator.
+It uses State machine Diagram & has four init State & 1 end state  
+
+
+
+Int--In Init  state,The robot reads the configuration and intializes the applications.
+If the step is completed successfully,the robot moves to the next state,Get transaction 
+If system Error is encountered,the next state state that is executed is End Process.
+
+In the Get transaction Data State,there are two possible courses of actions -either a 
+next transaction comes next and is processed by the robot,or all transaction have been 
+Operated on,no more data is left,so the prcess comes to an end.
+
+Now after retrieving a new transaction,the process transaction state is executed.
+
+The first one is "Sucess",in which case a loop is performed and the
+next transaction data. The second possible outcome is Business Rules Exception ,in which some
+specific action needs to be taken 
+Afterwards ,the execution loops back to the "Get Transaction Data" State.
+Finally the System error  transition ,which requires us to take the necessary step towards the recovery from the error 
+That means all the applications are closed and the execution loops back to the Init State, In which the application are restarted
+Now lets take a closer look at the init state ,during which the robot reads the settings
+and starts all the needed applications.
+The overall exception Handling is already in place throoughout the framework ,which is 
+why there are try Catch activities in every state.
+The Robot tries to intialize ,and it fails to do so,it ends the process
+To check whether there's an exception or not ,we set the exception 
+object to the system error and initialize it with "Nothing".
+The next steps are to read the config file ,and after that , to start all the applications.
+We catch any exception that might come up ,and then set the SystemError object to that 
+specific Exception.
+Depending n the value of SystemError ,Either the Get Transactin Data or the End Prcess 
+state are performed 
+If systemError is nothing , the robot moves on to get Transaction Data.
+If a system exception is thrown ,we log a Fatal error message state that intialization 
+failed ,and the Robot moves on the End Process.
+Lets go back to reading the config file that happens only once at the begining of 
+
+
+How to create reframework login credential & process
+8168760715,
+
+
+TestRobot-Credential
+
+
+
+1.OPEN CONFIG & GIVE THE URL& 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+      
+
+
+

@@ -1,0 +1,21 @@
+   Array 
+
+1.Array= new Int32()
+2.Array= new Int32() {1,2,3}
+3.Array= new Int32(2) {1,2,3}
+
+
+   List
+1.List= new List(of Int32) from {1,2,3}
+2.List= new List(of Int32)
+ use Add to Collection to add
+
+
+  Dictionary
+1.New Dictionary(of string, Int32)
+    
+
+  Data Table
+1. new system.Data.Datatable
+
+

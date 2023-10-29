@@ -1,0 +1,44 @@
+Arguments are used to pass data from a workflow to another Workflow.They have specific directions  In/Out/InOut.
+
+Arguments are used to pass data from a project to another.
+
+
+In a global sense, they resemble variables, as they store data dynamically and pass it on. 
+Variables pass data between activities, while arguments pass data between automations. As a result, 
+they enable you to reuse automations time and again.
+
+
+UiPath Studio supports a large number of argument types,
+ which coincide with the types of variables. Therefore, you can create Generic Value, String, Boolean,  or DataTable arguments
+ and you can also browse for .Net types, just as you do in the case of variables.
+
+Additionally, arguments have specific directions (In, Out, In/Out, Property) that tell the application where the information stored in them is supposed to go.
+
+How to Invoke a Workflow?
+
+
+o Invoke synchronously a specified workflow passing it or not a list of input arguments.
+o 
+• When I need this work flow invoke activity ?
+o Especially when you develop a large process and it is very difficult to follow and to test the entire process from top to botom. 
+o As a best practice, it is recomanded to split your process into small processes, test them and finally invoke each process in the Main workflow.
+
+
+How to create Arguments in project
+
+1.Create a new sequence.
+2.In the Arguments panel, create an argument, StoreValue.
+3.From the Direction list, select Out, and do not change the Argument Type from String.
+4.Add an Assign activity to the Designer panel.
+5.In the Properties panel, in the To field, add the StoreValue argument.
+6.In the Value field, type a string, such as "How does one use an argument?".
+7.Create a new sequence.
+8.Create a string variable, strFinalValue.
+9.Add an Invoke Workflow File activity to the Designer panel.
+10.On the activity, click the Browse (…) button and browse for the previously created sequence.
+11.Click Import Arguments. The Invoked Workflow’s Arguments window is displayed. Note that the argument of the first sequence is displayed here.
+12.In the Value field, add the strFinalValue variable and click Ok. The argument is imported and the value from it is going to be stored in the current project through the strFinalValue variable.
+13.Add a Message Box activity under the Invoke Workflow File.
+14.In the Properties panel, in the Text field, type strFinalValue + " This is how", for 
+
+

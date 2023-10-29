@@ -1,0 +1,66 @@
+Email Automation:-
+Static----outlook-get outlook ,send outlook ,reply outlook mail
+Dynamic----gmail,yahoo,rediff,hotmail------imap, smtp
+
+
+
+1.
+
+
+
+
+1.Get Outlook
+
+Imap -Internet map acess protocol
+It is only used for receiving mail.
+For some useful feature to mark message as read 
+
+imap ----server is------ imap.gmail.com----Port ---993
+
+Go inside For Each & select System.net.mail.message
+
+
+
+you have to provide your mail  id &  password in this 
+provide that how many mails want like 5 
+Read &  unread mail
+For quantity we will used for each loop he
+Imap is latest one in market
+
+mail.Subject.Contains("Testing")
+
+If Condition---mail.Subject.Contains("Testings")
+Then
+-Save Attachments
+mail
+"C:\Users\Admin\Documents\data""
+
+
+POP3---It stand for Post office protocol 
+ -It works same like Imap 
+It is obsolete protocol It is used only  reading mail .like imap
+
+Exchange--It is microsoft level enterprises email solotion 
+Uipath integrate perfectly offering activity for sending & receiving message
+
+
+
+
+
+
+Outlook activity iss slightly diffrernt .They work with api of desktop application
+So action already hve contexts ,then no need to setup any thing or services
+this activity  are designed to used already existing outlook accounts
+
+
+Smtp -Simple mail transfer protocol.
+smtp.gmail.com
+It is basic protocol for sending protocol
+Smtp--------------server -is  smtp.gmail.com port -587
+Same setting like imap
+Every thing same 
+Difference that(IMAP& POP3) is for reading 
+This is for sending mail & attachement 
+& for any data scrapping 
+
+
